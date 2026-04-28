@@ -1,6 +1,13 @@
 @font-face {
     font-family: montserrat;
     src: url(fonts/Montserrat-VariableFont_wght.ttf);
+    /*
+    Copyright 2024 The Montserrat.Git Project Authors (https://github.com/JulietaUla/Montserrat.git)
+
+    This Font Software is licensed under the SIL Open Font License, Version 1.1.
+    This license is copied below, and is also available with a FAQ at:
+    https://openfontlicense.org
+    */
 }
 
 html, body{
@@ -13,4 +20,39 @@ html, body{
     font-family: montserrat;
     text-align: center;
     font-weight: bolder;
+}
+
+.food_frame{
+    display: inline-block;
+    padding: 5%;
+    background-image: url("images/low_spice_bg.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5em;
+    margin-bottom: 5%;
+}
+
+.food_frame img{
+    display: block;
+    width: 13em;
+    height: 20em;
+    object-fit: contain;
+    border-radius: 1em;
+}
+
+.item_description{
+
+    text-align: center;
+    background-color: tan;
+    width: 50vh;
+    padding: 3em;
+    margin: 2vh;
+    border-radius: 2em;
+}
+.description_text{
+    font-family: montserrat, sans-serif;
+    font-weight: bolder;
+}
+.su_text{
+    font-family: montserrat, sans-serif;
 }
