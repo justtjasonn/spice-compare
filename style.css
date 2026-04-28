@@ -1,0 +1,16 @@
+@font-face {
+    font-family: montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+html, body{
+    margin: 0;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.page_title{
+    font-family: montserrat;
+    text-align: center;
+    font-weight: bolder;
+}
