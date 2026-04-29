@@ -12,7 +12,7 @@
 
 html, body{
     margin: 0;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(153, 114, 63);
     color: white;
 }
 
@@ -22,7 +22,7 @@ html, body{
     font-weight: bolder;
 }
 
-.food_frame{
+.low_food_frame{
     display: inline-block;
     padding: 5%;
     background-image: url("images/low_spice_bg.png");
@@ -32,7 +32,9 @@ html, body{
     margin-bottom: 5%;
 }
 
-.food_frame img{
+.low_food_frame img,
+.medium_food_frame img,
+.high_food_frame img{
     display: block;
     width: 13em;
     height: 20em;
@@ -40,19 +42,141 @@ html, body{
     border-radius: 1em;
 }
 
-.item_description{
+.medium_food_frame{
+    display: inline-block;
+    padding: 5%;
+    background-image: url("images/med_spice_bg.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5em;
+    margin-bottom: 5%;
+}
+
+.high_food_frame{
+    display: inline-block;
+    padding: 5%;
+    background-image: url("images/high_spice_bg.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.5em;
+    margin-bottom: 5%;
+}
+
+
+.low_item_description{
 
     text-align: center;
-    background-color: tan;
+    background-color: rgb(103, 189, 77);
     width: 50vh;
     padding: 3em;
     margin: 2vh;
     border-radius: 2em;
+    position: relative;
 }
+
+.medium_item_description{
+
+    text-align: center;
+    background-color: rgb(214, 183, 44);
+    width: 50vh;
+    padding: 3em;
+    margin: 2vh;
+    border-radius: 2em;
+    position: relative;
+}
+
+.high_item_description{
+
+    text-align: center;
+    background-color: rgb(190, 31, 31);
+    width: 50vh;
+    padding: 3em;
+    margin: 2vh;
+    border-radius: 2em;
+    position: relative;
+}
+
+.low_spice_level{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.medium_spice_level{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.high_spice_level{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
 .description_text{
     font-family: montserrat, sans-serif;
     font-weight: bolder;
 }
 .su_text{
+    font-family: montserrat, sans-serif;
+}
+
+.low_spice_level_text{
+    font-family: montserrat, sans-serif;
+    font-weight: bolder;
+    background-color: rgb(56, 156, 56);
+    width: fit-content;
+    padding: 3%;
+    border-radius: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 0.08s;
+}
+.medium_spice_level_text{
+    font-family: montserrat, sans-serif;
+    font-weight: bolder;
+    background-color: rgb(187, 154, 6);
+    width: fit-content;
+    padding: 3%;
+    border-radius: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 0.08s;
+}
+.high_spice_level_text{
+    font-family: montserrat, sans-serif;
+    font-weight: bolder;
+    background-color: rgb(168, 20, 20);
+    width: fit-content;
+    padding: 3%;
+    border-radius: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 0.08s;
+}
+.low_spice_level_text:hover{
+    filter: brightness(0.8);
+}
+.medium_spice_level_text:hover{
+    filter: brightness(0.8);
+}
+
+.high_spice_level_text:hover{
+    filter: brightness(0.8);
+}
+
+.item_descriptions{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    padding: 1rem;
+}
+
+.dropdown{
+    font-family: montserrat, sans-serif;
+}
+
+#option1{
     font-family: montserrat, sans-serif;
 }
