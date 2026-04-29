@@ -67,9 +67,8 @@ html, body{
 
     text-align: center;
     background-color: rgb(103, 189, 77);
-    width: 50vh;
+    width: 100%;
     padding: 3em;
-    margin: 2vh;
     border-radius: 2em;
     position: relative;
 }
@@ -78,9 +77,8 @@ html, body{
 
     text-align: center;
     background-color: rgb(214, 183, 44);
-    width: 50vh;
+    width: 100%;
     padding: 3em;
-    margin: 2vh;
     border-radius: 2em;
     position: relative;
 }
@@ -89,9 +87,8 @@ html, body{
 
     text-align: center;
     background-color: rgb(190, 31, 31);
-    width: 50vh;
+    width: 100%;
     padding: 3em;
-    margin: 2vh;
     border-radius: 2em;
     position: relative;
 }
@@ -167,16 +164,60 @@ html, body{
 
 .item_descriptions{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1.5rem;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
     padding: 1rem;
+    box-sizing: border-box;
+}
+
+.item_descriptions > div {
+    width: 100%;
+    max-width: 28rem;
+    min-width: 18rem;
+    box-sizing: border-box;
+}
+
+#result{
+    font-family: montserrat, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1em;
+    color: white;
 }
 
 .dropdown{
     font-family: montserrat, sans-serif;
 }
 
-#option1{
+#option1, #option2{
     font-family: montserrat, sans-serif;
+    font-size: 1.2rem;
+    border-radius: 0.8rem;
+    border: none;
+    margin: 0.5em;
+    padding: 0.2em;
+}
+
+#compare_btn{
+    border-radius: 1em;
+    font-size: 1.4rem;
+    border: 0;
+    background-color: rgb(128, 16, 16);
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+    transition: ease-in-out 0.2s;
+}
+
+#compare_btn:hover{
+    filter: brightness(1.4);
+    cursor: pointer;
 }
