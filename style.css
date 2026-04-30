@@ -10,6 +10,11 @@
     */
 }
 
+@font-face {
+    font-family: porkys;
+    src: url(fonts/PORKYS_.TTF);
+}
+
 html, body{
     margin: 0;
     background-color: rgb(153, 114, 63);
@@ -17,8 +22,10 @@ html, body{
 }
 
 .page_title{
-    font-family: montserrat;
+    font-family: porkys, montserrat, sans-serif;
     text-align: center;
+    letter-spacing: 0.5cqw;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
@@ -192,8 +199,46 @@ html, body{
     color: white;
 }
 
+.selection.menu {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.select-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
 .dropdown{
     font-family: montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 1.2rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.dropdown label {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.preview-card {
+    display: inline-block;
+    transform-origin: top center;
+    width: fit-content;
 }
 
 #option1, #option2{
@@ -201,8 +246,8 @@ html, body{
     font-size: 1.2rem;
     border-radius: 0.8rem;
     border: none;
-    margin: 0.5em;
-    padding: 0.2em;
+    margin: 0.5em 0;
+    padding: 0.5em;
 }
 
 #compare_btn{
@@ -220,4 +265,69 @@ html, body{
 #compare_btn:hover{
     filter: brightness(1.4);
     cursor: pointer;
+}
+
+pre{
+    font-family: montserrat, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.redirect_btn{
+    font-family: porkys, montserrat, sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    background-color: rgb(128, 16, 16);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin: 1rem auto;
+    z-index: 1;
+    transition: ease-in-out 0.2s;
+}
+
+.redirect_btn:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.button-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fire-burst {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background-image: url("images/burst_of-fire.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.fire-burst.animate {
+    animation: fireBurstAnimation 0.6s ease-out forwards;
+}
+
+@keyframes fireBurstAnimation {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) scale(0.5);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) scale(1.5);
+    }
 }

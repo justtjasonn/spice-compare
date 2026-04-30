@@ -9,25 +9,29 @@
 <body>
     <h1 class="page_title">Compare scoville units</h1>
     <div class="selection menu">
-        <div class="dropdown">
-            <label for="option1">Select the first item:</label>
-            <select id="option1">
-                <option value="option1">Bell pepper</option>
-                <option value="option2">buldak</option>
-                <option value="option3">carolina reaper</option>
-                <option value="option4">tabasco</option>
-                <option value="option5">jalapeño pepper</option>
-            </select>
-        </div>
-        <div class="dropdown">
-            <label for="option2">Select the second item:</label>
-            <select id="option2">
-                <option value="option1">Bell pepper</option>
-                <option value="option2">buldak</option>
-                <option value="option3">carolina reaper</option>
-                <option value="option4">tabasco</option>
-                <option value="option5">jalapeño pepper</option>
-            </select>
+        <div class="select-row">
+            <div class="dropdown">
+                <label for="option1">Select the first item:</label>
+                <select id="option1">
+                    <option value="option1">Bell pepper</option>
+                    <option value="option2">buldak</option>
+                    <option value="option3">carolina reaper</option>
+                    <option value="option4">tabasco</option>
+                    <option value="option5">jalapeño pepper</option>
+                </select>
+                <div class="preview-card" id="option1-preview"></div>
+            </div>
+            <div class="dropdown">
+                <label for="option2">Select the second item:</label>
+                <select id="option2">
+                    <option value="option1">Bell pepper</option>
+                    <option value="option2">buldak</option>
+                    <option value="option3">carolina reaper</option>
+                    <option value="option4">tabasco</option>
+                    <option value="option5">jalapeño pepper</option>
+                </select>
+                <div class="preview-card" id="option2-preview"></div>
+            </div>
         </div>
         <button id="compare_btn">compare</button>
         <div id="result"></div>
