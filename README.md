@@ -1,7 +1,7 @@
 # spice-compare
 
 **Description:**  
-Spice compare is website made by me to compare different spicy and non-spicy foods by scoville units.  
+Spice compare is website made by me to compare different spicy and non-spicy foods by using scoville units, there are cards under the comparison system that show the exact SHU of each food item.  
 
 **Photos:**  
 Home page:
