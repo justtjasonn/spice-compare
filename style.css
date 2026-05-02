@@ -402,3 +402,98 @@ pre{
         transform: scale(1);
     }
 }
+
+.about_text{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: montserrat, sans-serif;
+    width: fit-content;
+    height: fit-content;
+    line-height: 150%;
+    padding: 2rem;
+    margin: 5rem;
+}
+
+.about_container{
+    display: flex;
+    gap: none;
+}
+
+.contact_links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-direction: row;
+}
+
+.contact_links h2 {
+    margin: 0;
+    font-family: montserrat, sans-serif;
+}
+
+.contact_links > a,
+.contact_links > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact_logo{
+    width: 4rem;
+    height: 4rem;
+}
+
+.contact_link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+    fill: white;
+    transition: ease-in-out 0.2s;
+}
+
+.icon:hover{
+    fill: rgb(58, 58, 58);
+}
+
+.contact_link:hover .icon,
+a:has(> .contact_logo):hover .contact_logo {
+    filter: brightness(1.3);
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-family: montserrat, sans-serif;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.contact_text{
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+}

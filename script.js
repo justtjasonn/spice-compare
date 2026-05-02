@@ -120,3 +120,20 @@ compareBtn.addEventListener('click', () => {
 // Initialize previews
 updatePreview(preview1, scovilleData[option1Select.value]);
 updatePreview(preview2, scovilleData[option2Select.value]);
+
+function copyEmail() {
+    const email = "leej70@kgv.hk";
+    
+    // Copy to clipboard
+    navigator.clipboard.writeText(email).then(() => {
+        const tooltip = document.getElementById("email-tooltip");
+        
+        // Show tooltip
+        tooltip.classList.add("show");
+        
+        // Hide it after 2 seconds
+        setTimeout(() => {
+            tooltip.classList.remove("show");
+        }, 2000);
+    });
+}
