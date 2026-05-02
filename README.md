@@ -11,4 +11,7 @@ Comparison page:
 About page:  
 <img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/c0f64548-4168-41b8-826e-ba7d97aef752" />  
 
+**AI Usage:**  
+I used Copilot for some javascript and just speeding up the process, less than 15-20% AI  
+
 Made for Hack Club Horizon
